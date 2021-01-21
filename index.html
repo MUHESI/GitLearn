@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/favicon/favicon.ico" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis"
+    />
+
+
+
+
+
+    <!--
+          { } 
+        Style CSS -->
+    <style></style>
+<title> CRES</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark backgroundCres border-bottom_jaune"
+    >
+      <a class="navbar-brand" href="#">
+        <img src="images/favicon/logo.png" alt="CRES" />
+      </a>
+      
+
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link mail" href="#"
+              ><strong>Next </strong><span class="sr-only">(current)</span></a
+            >
+          </li>
+          
+       </ul>
+    </nav>
+
+
+    <div class="container-fluid">
+      <header>
+          <div class="hero">
+            
+            <h1>We are coming soon !</h1>
+              <p>Stay tuned for something amagazing is being created</p>
+              
+              <div><a class="mail" href="mailto:csdidata@gmil.com">Contact us</a></div>   
+                        
+
+        <hr>
+        <p id="launch"></p>
+ 
+        
+      <footer style="color:;">Copyright 2020 | All Rights Reserved By <strong>CRSDI</strong></footer>
+
+      </header>
+      </div>
+    </div>
+
+
+<div class="card mb-3">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <img class="img-thumbnail" src="technologie.jpg" alt="...">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+<div class="card"></div>
+
+  </body>
+
+<script>
+
+var countDownDate = new Date("oct 31, 2020 4:00:00").getTime();
+var x = setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days =Math.floor(distance/(1000* 60*24));
+    var hours =Math.floor((distance % (1000* 60* 60 *24))/(1000 * 60 *60));
+    var minutes =Math.floor((distance % (1000* 60* 60))/(1000 * 60));
+    var seconds =Math.floor((distance % (1000* 60))/1000);
+    document.getElementById("launch").innerHTML = days + "days " +hours +"hours " + 
+    minutes +"min " +seconds+"sec ";
+
+    if(distance < 0){ 
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+    }
+}, 1000);
+
+ 
+  </script>
+
+
+</html>
